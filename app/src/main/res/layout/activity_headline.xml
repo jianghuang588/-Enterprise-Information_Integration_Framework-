@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardView1"
+        android:layout_width="394dp"
+        android:layout_height="646dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="8dp"
+        app:cardElevation="15dp"
+        app:cardMaxElevation="15dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2">
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="124dp"
+            android:text="@string/category"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/news_sources"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="@string/sources"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="337dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/category" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/news"
+            android:layout_width="350dp"
+            android:layout_height="356dp"
+            android:layout_marginBottom="45dp"
+            app:layout_constraintBottom_toTopOf="@+id/toolbar3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/news_sources" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar3"
+            android:layout_width="392dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="16dp"
+            android:background="#C4FFFFFF"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/news" />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/nextButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/toolbar3" />
+
+        <Button
+            android:id="@+id/prevButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/prevButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/toolbar3" />
+
+        <TextView
+            android:id="@+id/page"
+            android:layout_width="54dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/page"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nextButton"
+            app:layout_constraintHorizontal_bias="0.46"
+            app:layout_constraintStart_toEndOf="@+id/prevButton" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardView1"
+        android:layout_width="362dp"
+        android:layout_height="142dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="39dp"
+        app:cardElevation="15dp"
+        app:cardMaxElevation="15dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="124dp"
+            android:text="@string/textView1"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/inputBox1"
+            android:layout_width="242dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="124dp"
+            android:ems="10"
+            android:hint="@string/inputBox1"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/category" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="124dp"
+            android:text="@string/button1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputBox1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardView2"
+        android:layout_width="362dp"
+        android:layout_height="126dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="39dp"
+        app:cardElevation="15dp"
+        app:cardMaxElevation="15dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView1">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="124dp"
+            android:text="@string/textView2"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="124dp"
+            android:text="@string/button2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardView3"
+        android:layout_width="362dp"
+        android:layout_height="126dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="39dp"
+        app:cardElevation="15dp"
+        app:cardMaxElevation="15dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <TextView
+            android:id="@+id/cardView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/TextView3"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="@string/button3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

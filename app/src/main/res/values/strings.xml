@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Android News</string>
+    <string name="textView1">Term Search</string>
+    <string name="inputBox1">Search</string>
+    <string name="button1">Search</string>
+    <string name="textView2">News by Location</string>
+    <string name="button2">View Map</string>
+    <string name="TextView3">Top Headlines</string>
+    <string name="button3">View Top Headlines</string>
+    <string name="tweet_title">Search for %1$s</string>
+    <string name="tweet_titles">result for %1$s</string>
+    <string name="tweet_titles1">Top Headline for %1$s</string>
+    <string name="prevButton">Prev</string>
+    <string name="nextButton">Next</string>
+    <string name="page">0/4</string>
+    <string name="cardView1">cardView</string>
+    <string name="news_sources">news_sources</string>
+    <string name="news">news_sources</string>
+    <string name="spinner">spinner</string>
+    <string name="toolbar">toolbar</string>
+    <string name="cardView2">cardView2</string>
+    <string name="cardView3">cardView3</string>
+    <string name="cardView4">cardView4</string>
+    <string name="map">map</string>
+    <string name="card_view_layout">card_view_layout</string>
+    <string name="names">names</string>
+    <string name="androidImg">androidImg</string>
+    <string name="category">Category</string>
+    <string name="sources">Sources</string>
+    <string name="skipAllButton">SKIP (SEARCH ALL SOURCES)</string>
+    <string name="name">name</string>
+    <string name="content">content</string>
+    <string name="summit">summit</string>
+    <string name="buttonMap">ClickToFindLocationName</string>
+    <string name="imageButtonLocation">imageButtonLocation</string>
+    <string name="toolbar2">title</string>
+    <string name="toolbar3">title</string>
+    <string-array name="spinner">
+        <item></item>
+        <item>business</item>
+        <item>entertainment</item>
+        <item>general</item>
+        <item>health</item>
+        <item>science</item>
+        <item>sports</item>
+        <item>technology</item>
+    </string-array>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>
