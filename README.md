@@ -27,7 +27,7 @@
 
 ---
 
-### 📝 **Screenshots**
+### 📝 **Screencasts (GIFs)**
 
 <details>
 <summary>📰 **Top Headline Page**</summary>
