@@ -1,4 +1,4 @@
-# 📰 Android News App Documentation
+# 📰  Enterprise Information Integration Framework 
 
 ---
 
